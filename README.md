@@ -8,8 +8,9 @@
 
 ---
 
+![Logo](../ms1git_dir/assets/imgs/onlinelogomaker-032620-1341-4890.svg "Logo Image")
 
-![Project Mock-up](assets/recycle-imgs/recyclelogo.svg)
+![Logo](assets/recycle-imgs/recyclelogo.svg "Logo Image")
 
 # An Eco-friendly cycling club.
 
