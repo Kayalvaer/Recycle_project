@@ -8,7 +8,7 @@
 
 ---
 
-![Logo](../ms1git_dir/assets/imgs/onlinelogomaker-032620-1341-4890.svg "Logo Image")
+![Logo](assets/imgs/onlinelogomaker-032620-1341-4890.svg "Logo Image")
 
 # An Eco-friendly cycling club.
 
@@ -34,7 +34,7 @@ This is a project to design a website for a cycling club. The fact that it is tr
 
 Followed a model by [James Williamson, 2012](http://kayalvaer.no/ms1git_dir/index.html) which advice on not just focusing on coding but to also consider other stages like typography, color choice and the structure of the webpages should be right, even though the time did not allow me to do all the processes. The aim was to follow his model.
 
-<img src="../ms1git_dir/assets/imgs/Design Model  James Williamson, 2012 .png" alt="Model img" width="450"/>
+<img src="assets/imgs/Design Model  James Williamson, 2012 .png" alt="Model img" width="450"/>
 
 ## UX
 
