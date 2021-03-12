@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="View and explore Asker and Oslo, in an eco-friendly way." />
+        <meta name="keywords" content="recycle, eco-friendly, cyclists, cycle-tours" />
+        <meta name="author" content="kay alvaer" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <link rel="icon" type="image/png" href="./assets/images/ico/favicon.ico" />
+        <!--Bootstrap CDN CSS file-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous" />
+        <!-- GoogleFonts CDN -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap"
+            rel="stylesheet" />
+        <!-- FontAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous" />
+        <!-- Animate.css CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!---main CSS file-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script> -->
+
+
+        <!-- Script that initiates EmailJS with the personal key-->
+        <script>
+            (function () {
+                emailjs.init("user_NuscyPVat9MkJWgkhwuYv");
+            })();
+        </script>
+        <!-- Jquery.min CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+        <!------google maps link----->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <!--GoogleMaps map script with unique my API key-->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLTGYKgrLSc8i6dT2yva5eSoE31E0UlGY&callback=initMap&libraries=&v=weekly"
+            defer>
+        </script>
+
+        <title>ReCycle Club | Home</title>
+    </head>
+
+<body>
+    <!--Landing page code inspired from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV -->
+    <header id="cycle-wrap">
+        <div class="animate__animated animate__fadeIn">
+            <h1 id="hero-title" class="font-main user-select-none mb-4">ReCycle Cycling Club<span
+                    class="font-main mt-4">Cycle to Explore the panoramic views around Asker and Oslo.</span></h1>
+        </div>
+
+        <div id="info-intro" class="animate__animated animate__fadeIn animate__delay-1s mb-4 d-none d-md-block">
+            <p class="mt-3">Are you in Asker and Oslo area and wish for economic site tours?</p>
+            <p>Our service goal is to aid you on your site seeing experience.</p>
+            <p>Ring us for affordable & guided cycling tours!</p>
+        </div>
+
+        <!--      <div id="btn-one" class="btn-btn-1">
+            <a href="#navigation" id="about-info"
+                class="button animate__animated animate__fadeIn animate__delay-2s">Learn
+                more</a>
+        </div> -->
+        <section role="scroll" id="about">
+            <div class="arrow-down">
+                <a href="#about-us">
+                    <div class="arrowDown">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </header>
+    <!--Landing code end -->
+
+    <!-- Bootstrap Navbar code -->
+    <nav class="navbar sticky-top bg-dark" id="navigation">
+        <a class="nav-item" id="logo" href="#cycle-wrap"> <img src="assets/recycle-imgs/recyclelogo-freelogodesign.png"
+                alt="recycle logo with a navigation icon." /></a>
+
+        <span class="align-middle d-none d-sm-block user-select-none font-main" id="navTitle" role="banner"
+            data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false"
+            aria-label="Toggle menu">
+            Cycling Views & Tours in Asker and Oslo.
+        </span>
+        <div class="navbar-toggler" id="menuLines" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle menu">
+            <span class="navBar">
+                <div class="navLines"></div>
+                <div class="navLines"></div>
+                <div class="navLines"></div>
+            </span>
+
+        </div>
+
+        <div class="collapse navbar-collapse" data-toggle="collapse" data-target="#menu" id="menu">
+            <ul class="navbar-nav d-block text-center mr-auto mt-2 mt-lg-0 nav-list">
+                <li class="nav-item mx-auto">
+                    <!-- <a class="nav-link" href="#home">Home</a> -->
+                    <a href="#cycle-wrap" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <!-- <a class="nav-link" href="#about">About</a> -->
+                    <a href="#about-us" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <!--  <a class="nav-link" href="#tours">Tours</a> -->
+                    <a href="#StackedCards" class="nav-link">Tours</a>
+                </li>
+                <!-- <li class="nav-item mx-auto">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li> -->
+                <li class="nav-item mx-auto">
+                    <!--  <a class="nav-link" data-toggle="modal" href="#modalContactForm">Contact</a> -->
+                    <a href="#modalContactForm" class="nav-link" data-toggle="modal">Contact</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <!--  <a class="nav-link" href="#map">Map</a> -->
+                    <a href="#map" class="nav-link">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bootstrap Navbar code end -->
+
+    <section id="about-us">
+        <div class="container flex">
+            <div class="row align-items-center">
+                <!-- <div class="col"> -->
+                <img src="./assets/recycle-imgs/nick-scheerbart-VID8rLzqRxs-unsplash.jpg" alt="bicycle image"
+                    class="img-fluid">
+                <!--  </div> -->
+                <div class="col abt-info">
+                    <h1 class="abt-title"><span class="abt-span">Our</span>Story</h1>
+                    <p class="abt-txt">
+                        We realized we need to contribute in reduction of climate change disasters. And how we can
+                        do that is change peoples mindset about the use of cars. By having less people using cars the
+                        environment is getting saved from carbon-monoxide or CO2 gas. Then we thought of bicycles. Out
+                        team
+                        have diverse skills and this is not a job for them, rather passion for their hobby.
+                    </p>
+                    <!-- <button type="button" class="btn-btn-1 align-items-center" btn-lg>Get in
+                        touch</button> -->
+                    <h5 class="pt-3 pb-5 text-center">
+                        <strong>
+                            <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                    class="fas fa-hand-point-right"></i> Click here to contact us!</a>
+                        </strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------services cards-------------->
+    <!-- inspired by  github.com/jonathantneal/sanitize.css 
+codepen link https://codepen.io/JuniVersal/pen/zNyMRd*/ -->
+
+
+    <section id="StackedCards">
+
+        <div class="stackedSlider cardSlider">
+            <h3 class="stackedSlider-title">Our Services</h3>
+
+            <div class="section-intro section-intro--center"></div>
+
+            <input type="radio" name="sliderCard" id="athletic" class="slideCard-radio">
+            <input type="radio" name="sliderCard" id="cityTours" class="slideCard-radio">
+            <input type="radio" name="sliderCard" id="leisure" class="slideCard-radio" checked>
+            <input type="radio" name="sliderCard" id="adventure" class="slideCard-radio">
+            <input type="radio" name="sliderCard" id="discovery" class="slideCard-radio">
+
+            <div class="slideWrapper">
+
+                <label for="athletic" class="slide-list slide-list--1 card">
+                    <div class="slide-list-info">
+                        <img src="./assets/recycle-imgs/hannes-glockl-5-3-Rjd0d_U-unsplash.jpg" width="100%"
+                            class="card-img-top" alt="athletics image">
+
+                        <p class="title-2 title-2--light">Athletic Tours</p>
+                        <p class="title-3">Price : Kr500</p>
+                        <p class="slide-list-text montserrat">Are you preparing for that race? why not join our team!
+                            Our members who take part in different races around the
+                            world including "Tour de France". Why not join them to motivate yourself..</p>
+                        <h5 class="pt-3 pb-5 text-center">
+                            <strong>
+                                <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                        class="fas fa-hand-point-right"></i> Book now!</a>
+                            </strong>
+                        </h5>
+                    </div>
+                </label>
+
+                <!-- Slide-item -->
+
+                <label for="cityTours" class="slide-list slide-list--2 card">
+                    <div class="slide-list-info">
+                        <img src="./assets/recycle-imgs/pexels-samson-katt-5226493.jpg" width="100%"
+                            class="card-img-top" alt="city touring image">
+
+                        <p class="title-2 title-2--light">City Tours</p>
+                        <p class="title-3">Price : Kr300</p>
+                        <p class="slide-list-text montserrat">Suits explorers and those who are here for a city sight
+                            seeing.
+                            Tourists are welcome to use our eco-friendly bicycles delivered at the airport. We can
+                            handle
+                            your
+                            luggage for you while you cycle around.</p>
+                        <h5 class="pt-3 pb-5 text-center">
+                            <strong>
+                                <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                        class="fas fa-hand-point-right"></i>Book Now</a>
+                            </strong>
+                        </h5>
+                    </div>
+                </label>
+                <!-- Slide-item -->
+
+                <label for="leisure" class="slide-list slide-list--3 card">
+                    <div class="slide-list-info">
+                        <img src="./assets/recycle-imgs/alesia-kazantceva-Ob1grL3RBvI-unsplash.jpg" width="100%"
+                            class="card-img-top" alt="leisure image">
+
+                        <p class="title-2 title-2--light">Leisure Tours</p>
+                        <p class="title-3">Price : Kr600</p>
+                        <p class="slide-list-text montserrat">Are lovely tour with friends is important!Do you plan to
+                            have
+                            a social time with your friends in a way that safe the environment from climate change
+                            disasters.
+                            Guess what? We got you. Our eco-friendly bicycles are an answer to those worries. Leave your
+                            cars home and cycle to the
+                            mountains or a nearby Fornebu beach.</p>
+                        <h5 class="pt-3 pb-5 text-center">
+                            <strong>
+                                <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                        class="fas fa-hand-point-right"></i> Book Now</a>
+                            </strong>
+                        </h5>
+                    </div>
+                </label>
+
+
+                <!-- Slide-item -->
+
+                <label for="adventure" class="slide-list slide-list--4 card">
+                    <div class="slide-list-info">
+                        <img src="./assets/recycle-imgs/alvin-balemesa-pTiZF8QRIu0-unsplash.jpg" width="100%"
+                            class="card-img-top" alt="men having fun image">
+
+                        <p class="title-2 title-2--light">Adventure Tours</p>
+                        <p class="title-3">Price : Kr800</p>
+                        <p class="slide-list-text montserrat">Are you one of the adventure tours? We got you!Our team
+                            have
+                            those that are living the life of adventure with bicycles. Join them and learn for others or
+                            teach others.
+                            Its a passion and we support it. Or is it art? Then you on!</p>
+                        <h5 class="pt-3 pb-5 text-center">
+                            <strong>
+                                <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                        class="fas fa-hand-point-right"></i>Book Now</a>
+                            </strong>
+                        </h5>
+                    </div>
+                </label>
+
+                <!-- Slide-item -->
+
+                <label for="discovery" class="slide-list slide-list--5 card">
+                    <div class="slide-list-info">
+                        <img src="./assets/recycle-imgs/yomex-owo-Syo1SctK4k0-unsplash.jpg" width="100%"
+                            class="card-img-top" alt="man on adventure tour image">
+
+                        <p class="title-2 title-2--light">Discovery Tours</p>
+                        <p class="title-3">Price : Kr900</p>
+                        <p class="slide-list-text montserrat">Join our team of explorers!A team of members who have
+                            interest
+                            in exploring interesting historic sites of Norway through cycling. Join them and Discovery
+                            the beauty of Norway on a bicycle. We organise it all and insurance is included.</p>
+                        <h5 class="pt-3 pb-5 text-center">
+                            <strong>
+                                <a id="abtContact" data-toggle="modal" href="#modalContactForm"><i
+                                        class="fas fa-hand-point-right"></i>Book Now</a>
+                            </strong>
+                        </h5>
+                    </div>
+                </label>
+                <!-- Slide-items end -->
+
+            </div> <!-- Slide wrapper end-->
+        </div> <!-- Section Slider end -->
+    </section>
+
+    <!-- Testimonials -->
+    <div class="container-wrapper" id="testimonials">
+        <div class="container quotes-container content-container">
+            <section class="quote">
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h3 class="text-uppercase quote-title">Testimonials</h3>
+                        <hr class="block-divider block-divider--short">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="./assets/recycle-imgs/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg"
+                                    class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <i class="fa fa-quote-left"></i>
+                                    <p class="quote-txt">Myself and my friends are font of using the bicycles from
+                                        Re-cycle for our monthly
+                                        get togethers into the city or
+                                        for a trip in the country side. Its affordable as a group and we use an
+                                        eco-friendly way of getting around. We also
+                                        keep us safe from tickets if incase we take a drink.</p>
+                                    <p>Maria ...</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="./assets/recycle-imgs/kal-visuals-b1Hg7QI-zcc-unsplash.jpg"
+                                    class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <i class="fa fa-quote-left"></i>
+                                    <p class="quote-txt">I am an American who travelled to Fornebu for a business trip
+                                        and partly sight
+                                        seeing.I thought the taxis were
+                                        quite pricy and started searching online. Re-cycle website popped up and am
+                                        delighted i used their services. And
+                                        the support from the team is extra ordinary.</p>
+                                    <p>Jessica...</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.quotes -->
+        </div>
+    </div>
+
+    <!-- Locations Section -->
+    <section id="locations" class="row">
+        <div class="col-12">
+            <h3 class="loc-title ">Our Location</h3>
+            <h3 class="caption">Want to browse? Click on the markers below to take a look at the area around Asker!</h3>
+        </div>
+
+        <div id="map" class="col-12"></div>
+    </section>
+
+
+    <!-- Modal code from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content card">
+                <div class="modal-header text-center user-select-none">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us!</h4>
+                    <button type="button" id="modalclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3 user-select-none">
+                    <div class="text-center font-weight-bold">
+                        <p>Contact us now for best offers!</p>
+                        <p>We commit to making your visit memorable.</p>
+                        <p>Interested in an eco-friendly ride? We got you!</p>
+                    </div>
+                    <form id="contact-form" onsubmit="return sendMail(this)">
+                        <div class="md-form mb-3 text-center">
+                            <label for="name"><i class="fas fa-user"></i> Your name</label>
+                            <input type="text" required id="name" class="form-control" placeholder="Full name" />
+                        </div>
+
+                        <div class="md-form mb-3 text-center">
+                            <label for="email"><i class="fas fa-envelope"></i> Your email</label>
+                            <input type="email" required id="email" class="form-control" placeholder="Email address" />
+                        </div>
+
+                        <div class="md-form text-center">
+                            <label for="message"><i class="fas fa-comment-dots"></i> Your message</label>
+                            <textarea required id="message" class="md-textarea form-control" rows="4"
+                                placeholder="Type your enquiry here..."></textarea>
+                        </div>
+                        <br />
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal code end -->
+
+    <!-- ***************** Footer ***************** -->
+
+    <div class="footer">
+        <div class="foot-container">
+
+            <div class="footer-details">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            </div>
+
+            <div class="footer-details">
+                <a class="nav-item" id="logo" href="#cycle-wrap"> <img
+                        src="assets/recycle-imgs/recyclelogo-freelogodesign.png"
+                        alt="recycle logo with a navigation icon." /></a>
+                <p class="foot-p">Explore Oslo and Asker with us.<i class="fas fa-cycle"></i></p>
+            </div>
+        </div>
+        <hr class="foot-cr">
+        <p class="copy-kay">Copyright 2020 © Kay Alvaer</p>
+    </div>
+
+
+    <!--Site JavaScript-->
+    <script src="assets/js/script.js"></script>
+    <!--EmailJS script-->
+    <script src="assets/js/email.js"></script>
+    <!----Location Map script---->
+    <script src="assets/js/map.js"></script>
+    <!--Bootstrap CDN JavaScript plugins-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <!--GoogleMaps map script with unique my API key-->
+
+
+</body>
+
+</html>
