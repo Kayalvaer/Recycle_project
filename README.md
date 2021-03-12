@@ -8,7 +8,8 @@
 
 ---
 
-![Logo](../ms1git_dir/assets/imgs/onlinelogomaker-032620-1341-4890.svg "Logo Image")
+
+![Project Mock-up](assets/recycle-imgs/onlinelogomaker-032620-1341-4890.svg)
 
 # An Eco-friendly cycling club.
 
@@ -18,7 +19,6 @@
 
 ![Project Mock-up](assets/recycle-imgs/recycle.png)
 
-- Old website
 
 <img src="../ms1git_dir/assets/imgs/IAM resp img.png" alt="responsive viewer" width="700" length="400"/>
 
