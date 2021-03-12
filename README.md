@@ -9,7 +9,7 @@
 ---
 
 
-![Project Mock-up](assets/recycle-imgs/onlinelogomaker-032620-1341-4890.svg)
+![Project Mock-up](assets/recycle-imgs/recyclelogo.svg)
 
 # An Eco-friendly cycling club.
 
